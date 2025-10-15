@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Fitness App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- LOGIN PAGE -->
+<div id="loginPage">
+  <div class="login-box">
+    <h2>Fitness App Login</h2>
+    <input type="email" id="email" placeholder="Enter Email" />
+    <input type="password" id="password" placeholder="Enter Password" />
+    <button id="loginBtn">Login</button>
+    <button class="google-btn">Login with Google</button>
+  </div>
+</div>
+
+<!-- MAIN APP -->
+<div id="app">
+  <header>
+    <h1>Fitness Tracker</h1>
+    <button id="addExerciseBtn">+</button>
+  </header>
+
+  <div class="exercise-container" id="exerciseContainer"></div>
+
+  <div class="progress">
+    <h3>Total Points: <span id="points">0</span></h3>
+  </div>
+</div>
+
+<!-- ADD EXERCISE MODAL -->
+<div id="modal" class="modal hidden">
+  <div class="modal-content">
+    <h3>Add New Exercise</h3>
+    <input type="text" id="newExerciseInput" placeholder="Exercise Name">
+    <div class="modal-actions">
+      <button id="saveExerciseBtn">Add Exercise</button>
+      <button id="cancelExerciseBtn">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

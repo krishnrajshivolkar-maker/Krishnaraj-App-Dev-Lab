@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Poppins", sans-serif; background: #111; color: #fff; min-height: 100vh; }
+
+#loginPage {
+  display: flex; justify-content: center; align-items: center;
+  background: url("https://share.google/images/UOLyeYVxz9H21UCwW") center/cover no-repeat;
+  height: 100vh;
+}
+
+.login-box {
+  background: rgba(0,0,0,0.75); padding: 2rem; border-radius: 15px; width: 320px; text-align: center;
+}
+
+.login-box h2 { margin-bottom: 1rem; font-size: 1.8rem; color: #00ff99; }
+.login-box input { width: 100%; padding: 10px; margin: 8px 0; border: none; border-radius: 5px; }
+.login-box button { width: 100%; padding: 10px; background-color: #00ff99; color: black; border: none; border-radius: 5px; margin-top: 10px; font-weight: bold; cursor: pointer; }
+.google-btn { background-color: #4285f4; color: white; margin-top: 15px; }
+
+#app { display: none; text-align: center; padding: 1.5rem; background: url('https://images.unsplash.com/photo-1593079831268-3381b0db4a77?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; min-height: 100vh; }
+header { display: flex; justify-content: space-between; align-items: center; }
+header h1 { font-size: 1.8rem; color: #00ff99; }
+#addExerciseBtn { background-color: #00ff99; color: black; font-size: 1.5rem; border: none; border-radius: 50%; width: 40px; height: 40px; cursor: pointer; }
+
+.exercise-container { margin-top: 2rem; display: flex; flex-direction: column; align-items: center; gap: 15px; }
+.exercise {
+  background-color: rgba(0,0,0,0.7); border: 2px solid #00ff99; border-radius: 10px; padding: 1rem; width: 300px; text-align: left;
+}
+.exercise h3 { margin: 0; color: #00ff99; }
+.exercise button { background-color: #00ff99; border: none; padding: 5px 10px; border-radius: 5px; margin-top: 10px; margin-right: 5px; cursor: pointer; }
+
+.progress { margin-top: 1rem; color: #ffcc00; }
+
+/* Modal */
+.modal { position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.6); display:flex; justify-content:center; align-items:center; }
+.modal-content { background: #222; color: #fff; padding: 25px; border-radius: 12px; text-align: center; width: 300px; }
+.modal-content input { width: 90%; padding: 8px; margin: 10px 0; border: none; border-radius: 6px; }
+.modal-actions { display:flex; justify-content: space-around; margin-top:10px; }
+.hidden { display: none; }
